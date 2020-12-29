@@ -1,4 +1,35 @@
 .emailist {
-    flex: 0 0 80%;
+    flex: 0 0 70%;
     /* background-color: blue; */
+    --color: rgba(0, 0, 0, 0.5);
+}
+
+.emaillist--tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.emaillist--toolsLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0 0 20%;
+}
+
+.emaillist--toolsLeft-checkboxWrapper {
+    position: relative;
+    cursor: pointer;
+}
+.emaillist--toolsLeft-checkboxWrapper-arrow {
+    position: absolute;
+    left: -15px;
+    color: var(--color);
+    height: 10px;
+    width: 10px;
+}
+
+.emaillist--toolsLeft-refresh, .emaillist--toolsLeft-more {
+    color: rgba(0,0,0, 0.5);
+    width: 22px;
+    cursor: pointer;
 }
