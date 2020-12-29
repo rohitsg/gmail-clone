@@ -1,4 +1,99 @@
 .sidebar {
-    flex: 0 0 20%;
-    background-color: red;
+    flex-basis: 13%;
+    min-width: 238px;
+    /* background-color: red; */
+}
+
+.sidebar--compose {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 24px;
+    box-shadow:  1px 1.5px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+    height: 48px;
+    min-width: 56px;
+    align-items: center;
+    width: 145px;
+    font-family: 'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: .875rem;
+    letter-spacing: .25px;
+    color: #3c4043;
+    margin: 16px 0;
+    margin-left: 10px;
+}
+
+.sidebar--compose:hover {
+    background-color: #fafafb;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+}
+
+.sidebar--compose__separator {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.sidebar--sections {
+    max-height: 280px;
+    overflow-y: hidden;
+    position: relative;
+    padding-right: 20px;
+}
+
+.sidebar:hover .sidebar--sections {
+    overflow-y: overlay;
+}
+
+
+.sidebar--sections__separator {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.sidebar:hover .sidebar--sections__separator::after {
+    box-shadow: 0 -2px 2px -1px rgba(0,0,0,.1);
+    position: absolute;
+    height: 4px;
+    content: "";
+    background: #dadce0;
+    border-radius: 2px;
+    height: 4px;
+    margin: 4px auto 0;
+    width: 32px;
+    left: 40%;
+    /* background-color: red; */
+}
+.sidebar--listItem {
+    display: flex;
+    justify-content: space-between;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px 10px;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: .3px;
+    cursor: pointer;
+}
+
+.sidebar--listItem__active {
+    background-color: #fce8e6;
+    font-weight: bold;
+    color: #d93025;
+}
+.sidebar--listItem:hover {
+    font-weight: bold;
+    background-color: #e8eaed;
+}
+.sidebar--listItem__icon {
+    flex-basis: 15%;
+    margin-right: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.sidebar--listItem__title {
+    flex-basis: 60%;
+}
+.sidebar--listItem__number {
+    margin-right: 0;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: flex-end;
 }

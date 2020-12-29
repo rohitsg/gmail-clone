@@ -1,4 +1,5 @@
 .container-body {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    /* outline: 1px solid goldenrod; */
 }
