@@ -1,19 +1,36 @@
 .emailist {
-    flex: 0 0 70%;
-    /* background-color: blue; */
+    flex: 0 0 calc(100% - 238px);
     --color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: burlywood; */
+}
+
+.emaillist--body {
+    flex: 0 0 80%;
+    /* background-color: red; */
+}
+
+.emaillist--verticalTools {
+    flex: 0 0 10%;
+    max-width: 80px;
+    /* background-color: blue; */
 }
 
 .emaillist--tools {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* width: calc(100vw - 238px); */
 }
+
 .emaillist--toolsLeft {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex: 0 0 20%;
+    flex: 0 0 40%;
+    max-width: 125px;
 }
 
 .emaillist--toolsLeft-checkboxWrapper {
@@ -32,4 +49,24 @@
     color: rgba(0,0,0, 0.5);
     width: 22px;
     cursor: pointer;
+}
+
+.emaillist--toolsLeft-more {
+    margin-left: 10px;
+}
+.emaillist--toolsRight {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--color);
+    font-size: .85rem;
+    letter-spacing: .3px;
+}
+.emaillist--toolsRight-navBefore, .emaillist--toolsRight-navNext {
+    margin: auto 10px;
+}
+
+.emaillist--toolsRight-navNext {
+    margin-right: 60px;
 }

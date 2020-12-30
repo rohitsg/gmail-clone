@@ -1,6 +1,6 @@
 .sidebar {
-    flex-basis: 13%;
-    min-width: 238px;
+    flex: 0 0 25%;
+    max-width: 238px;
     /* background-color: red; */
 }
 
@@ -44,7 +44,7 @@
 }
 
 
-.sidebar--sections__separator {
+.sidebar--sections__separator, .sidebar--meetSection__separator {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
 }
@@ -81,7 +81,7 @@
 }
 .sidebar--listItem:hover {
     font-weight: bold;
-    background-color: #e8eaed;
+    background-color: rgba(0, 0, 0, 0.06);
 }
 .sidebar--listItem__icon {
     flex-basis: 15%;
@@ -97,3 +97,30 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.sidebar--meetSection {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.sidebar--meetSection__separator {
+    margin-top: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #F6F6F6; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(204,204,204); 
+    border: 1px solid rgb(190,190,190);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(190,190,190); 
+  }

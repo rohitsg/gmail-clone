@@ -9,6 +9,7 @@ import LabelImportantIcon from "@material-ui/icons/LabelImportant";
 import MailIcon from "@material-ui/icons/Mail";
 import DeleteIcon from "@material-ui/icons/Delete";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import VideocamIcon from "@material-ui/icons/Videocam";
 
 interface IProps {
   // name: string
@@ -86,6 +87,22 @@ const SideBar = (props: IProps) => {
         </div>
       </div>
       <div className="sidebar--sections__separator"></div>
+
+      <div className="sidebar--meetSection">Meet</div>
+
+      <div className="sidebar--listItem" title="New Meeting">
+        <VideocamIcon className="sidebar--listItem__icon" />
+        <div className="sidebar--listItem__title">New Meeting</div>
+        <div className="sidebar--listItem__number"></div>
+      </div>
+
+      <div className="sidebar--listItem" title="Join a meeting">
+        <VideocamIcon className="sidebar--listItem__icon" />
+        <div className="sidebar--listItem__title">Join a meeting</div>
+        <div className="sidebar--listItem__number"></div>
+      </div>
+
+      <div className="sidebar--meetSection__separator"></div>
     </div>
   );
 };
